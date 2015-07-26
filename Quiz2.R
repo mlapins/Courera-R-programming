@@ -17,6 +17,7 @@ data(iris)
 mean(iris[iris$Species == "virginica",]$Sepal.Length)
 
 tapply(iris$Sepal.Length, iris$Species, mean)
+tapply(iris$Sepal.Length, iris$Species, mean, trim = .1)
 
 # OR
 
